@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Devchallenges</title>
+  </head>
+
+  <body>
+    <div class="mobile-nav" id="responsive">
+      <div class="mobile-nav-container">
+        <span id="toggle" class="material-icons closing">backspace</span>
+
+        <nav>
+          <ul class="mobile-nav-list">
+            <li>Home</li>
+            <li>Collection</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <div class="logo">THIS INTERIOR</div>
+        </div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Collection</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>backspace</li>
+          </ul>
+        </nav>
+        <span id="list" class="material-icons icon">list</span>
+      </header>
+
+      <main>
+        <div class="cta-container">
+          <h1>Modern interior</h1>
+          <p>
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <div>
+            <span>Read more </span>
+            <span class="material-icons">forward</span>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img src="asset/photo1.png" alt="living room photo" />
+          <div class="designer-card">
+            <div class="designer-data">
+              <img src="asset/photo2.png" alt="designer avatar" />
+              <div>
+                <div class="designer-name">Alizza Webber</div>
+                <div class="designer-role">Interior designer</div>
+              </div>
+            </div>
+            <div class="designed">
+              Designed in 2020 by <br />
+              Aliza Webber
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          created by <span class="username">rendinel</span> - devChallenge.io
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      const toggle = document.querySelector('#toggle'),
+        responsive = document.querySelector('#responsive'),
+        list = document.querySelector('#list')
+
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault()
+        responsive.classList.toggle('off')
+      })
+
+      list.addEventListener('click', function (e) {
+        e.preventDefault()
+        responsive.classList.toggle('off')
+      })
+    </script>
+  </body>
+</html>
