@@ -88,6 +88,12 @@ header > nav > ul {
   display: none;
 }
 
+@media (hover: hover) {
+  .icon{
+    cursor: pointer;
+  }
+}
+
 .mobile-nav {
   display: none;
   position: absolute;
