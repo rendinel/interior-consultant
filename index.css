@@ -126,7 +126,7 @@ header > nav > ul {
 }
 
 @media (hover: hover) {
-  .closing{
+  .closing:hover{
     cursor: pointer;
   }
 }
